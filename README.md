@@ -1,4 +1,4 @@
-<h1>cara mendownload menggunakan gitbash atau terminal lain</h1>
+<h1>cara mendownload menggunakan gitbash atau terminal windows</h1>
 1. gunakan "git clone https://github.com/d1by4/crud_api.git" <br>
 2. jalankan di terminal dengan perintah "composer install" <br>
 3. perintahkan di terminal "php artisan migrate"<br>
