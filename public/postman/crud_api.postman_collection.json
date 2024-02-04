@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "081dd436-7f9c-4636-8ad7-014887cff62c",
+		"name": "crud_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32492185"
+	},
+	"item": [
+		{
+			"name": "index",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{crud_api}}/buku",
+					"host": [
+						"{{crud_api}}"
+					],
+					"path": [
+						"buku"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{crud_api}}/buku/111",
+					"host": [
+						"{{crud_api}}"
+					],
+					"path": [
+						"buku",
+						"111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "store",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"judul\" : \"wow\",\r\n    \"pengarang\" : \"anonim\",\r\n    \"tanggal_publikasi\" : \"2000-01-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{crud_api}}/buku",
+					"host": [
+						"{{crud_api}}"
+					],
+					"path": [
+						"buku"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"judul\" : \"hidup harus bermakna\",\r\n    \"pengarang\" : \"sudjiwo\",\r\n    \"tanggal_publikasi\" : \"2013-02-10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{crud_api}}/buku/12",
+					"host": [
+						"{{crud_api}}"
+					],
+					"path": [
+						"buku",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "destroy",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{crud_api}}/buku/1",
+					"host": [
+						"{{crud_api}}"
+					],
+					"path": [
+						"buku",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
